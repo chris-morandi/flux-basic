@@ -36,3 +36,9 @@ spec:
           - op: add
             path: /spec/template/spec/containers/0/args/-
             value: --requeue-dependency=5s
+  sync:
+    kind: GitRepository
+    url: "https://github.com/chris-morandi/flux-basic.git"
+    ref: "refs/heads/main"
+    path: "develop/"
+    pullSecret: "flux-system"
