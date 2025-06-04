@@ -3,3 +3,4 @@ kind: Kustomization
 resource:
 - ../base
 
+namespace: default
