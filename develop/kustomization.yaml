@@ -5,17 +5,17 @@ resources:
 - ../base/
 #- postgres-helm-repo.yaml 
 #- postgres-helm-release.yaml 
-#
-#patchesJson6902:
-#- target:
-#    version: v1
-#    kind: Pod
-#    name: nginx-pod  # Original name
-#  patch: |-
-#    - op: replace
-#      path: /metadata/name
-#      value: my-custom-nginx-pod
-#
+
+patchesJson6902:
+- target:
+    version: v1
+    kind: Pod
+    name: nginx-pod  # Original name
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: my-custom-nginx-pod
+
 
 
 namespace: default
